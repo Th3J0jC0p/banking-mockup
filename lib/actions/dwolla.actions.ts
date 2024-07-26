@@ -28,6 +28,7 @@ export const createFundingSource = async (
   options: CreateFundingSourceOptions
 ) => {
   try {
+    console.log("CreateFundingSource Options: ", options);
     return await dwollaClient
       .post(`customers/${options.customerId}/funding-sources`, {
         name: options.fundingSourceName,

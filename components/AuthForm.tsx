@@ -36,9 +36,6 @@ const AuthForm = ({ type }: {type: string}) => {
         setIsLoading(true);
 
         try {
-
-            
-
             if(type === 'sign-in') {
                 const response = await signIn({
                     email: data.email,
